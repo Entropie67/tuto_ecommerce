@@ -1,5 +1,5 @@
 body{
-    background-color: bisque;
+    background-color: #BCAAA4;
 }
 
 h1, h2 {
@@ -14,21 +14,45 @@ h1, h2 {
 }
 
 article {
+    width: 20%;
     display: flex;
     flex-direction: column;
-    border: solid 1px;
+    justify-content: space-between;
     border-radius: 5px;
     padding: 10px;
+    margin-top: 20px;
+    background-color: #CE93D8;
 }
 
 a{ 
     display: block;
     padding: 5px;
-    border: solid 1px;
+    background-color: aquamarine;
     border-radius: 5px;
+    text-decoration: none;
 }
 
 .image {
     max-width: 200px;
+    max-height: 200px;
     object-fit: cover;
+    border: solid;
+    border-radius: 5px;
+    margin: auto;
+    transition: transform .1s;
+}
+
+article p,a {
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+}
+
+article:hover {
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }

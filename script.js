@@ -6,7 +6,7 @@ let main = document.getElementById("main");
 for (let prod of produits){
     main.innerHTML += `<article>
                             <h2> ${prod.title} </h2>
-                            <img class="image" src="${prod.images[0]}" alt="">
+                            <img class="image" src="${prod.thumbnail}" alt="">
                             <p>Prix : ${prod.price}€</p>
                             <a href="article.html?id=${prod.id}">Détails</a>
                         </article>`;
