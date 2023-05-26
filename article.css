@@ -1,0 +1,17 @@
+h1, h2 {
+    text-align: center;
+}
+
+body {
+    background-color: blanchedalmond;
+    text-align: center;
+}
+
+article {
+    padding: 10px;
+}
+
+#prix {
+    color: red;
+    font-weight: bold;
+}

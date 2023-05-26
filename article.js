@@ -7,9 +7,12 @@ let value = decodeURI(temp[1]);
 // --------------------------------------------
 
 let main = document.getElementById("main");
-main.innerHTML += `<h2> Article ${value}</h2>
-    <p>Voici le détail de l'article</p>
-    <button id="btn"> J'achète !!</button>`; 
+main.innerHTML += `<article>
+        <h2> ${produits[value-1].title}</h2>
+        <p>${produits[value-1].description}</p>
+        <p id="prix">${produits[value-1].price}€</p>
+        <button id="btn"> J'achète !!</button>
+    </article>`; 
 
 // Ici on enregistre le produit dans la mémoire du navigateur    
 let btn = document.getElementById("btn");
